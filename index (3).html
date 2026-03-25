@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kilo — Privacy Policy</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:       #111214;
+      --bg2:      #1C1E22;
+      --bg3:      #25282E;
+      --border:   #2A2D33;
+      --text:     #FFFFFF;
+      --muted:    #AAAAAA;
+      --hint:     #666870;
+      --accent:   #FF3D00;
+      --green:    #00E676;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'DM Sans', sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      min-height: 100vh;
+    }
+
+    header {
+      border-bottom: 1px solid var(--border);
+      padding: 32px 24px 28px;
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 8px;
+    }
+
+    .logo-mark {
+      width: 36px;
+      height: 36px;
+      background: var(--accent);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'DM Mono', monospace;
+      font-weight: 500;
+      font-size: 15px;
+      color: #fff;
+      letter-spacing: -0.5px;
+    }
+
+    .logo-name {
+      font-size: 20px;
+      font-weight: 600;
+      letter-spacing: -0.3px;
+    }
+
+    .page-title {
+      font-size: 13px;
+      color: var(--muted);
+      font-family: 'DM Mono', monospace;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+
+    .updated {
+      display: inline-block;
+      font-family: 'DM Mono', monospace;
+      font-size: 12px;
+      color: var(--hint);
+      background: var(--bg3);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 4px 10px;
+      margin-bottom: 40px;
+    }
+
+    section {
+      margin-bottom: 40px;
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 28px;
+    }
+
+    section h2 {
+      font-size: 13px;
+      font-family: 'DM Mono', monospace;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--accent);
+      margin-bottom: 14px;
+    }
+
+    section p {
+      color: var(--muted);
+      font-size: 15px;
+      margin-bottom: 12px;
+    }
+
+    section p:last-child { margin-bottom: 0; }
+
+    ul {
+      list-style: none;
+      margin: 10px 0;
+      padding: 0;
+    }
+
+    ul li {
+      color: var(--muted);
+      font-size: 15px;
+      padding: 6px 0 6px 20px;
+      position: relative;
+      border-bottom: 1px solid var(--border);
+    }
+
+    ul li:last-child { border-bottom: none; }
+
+    ul li::before {
+      content: '—';
+      position: absolute;
+      left: 0;
+      color: var(--hint);
+      font-family: 'DM Mono', monospace;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover { text-decoration: underline; }
+
+    .highlight {
+      background: var(--bg3);
+      border-left: 3px solid var(--green);
+      border-radius: 0 8px 8px 0;
+      padding: 14px 18px;
+      margin-top: 12px;
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    footer {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 0 24px 48px;
+      border-top: 1px solid var(--border);
+      padding-top: 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    footer span {
+      font-size: 13px;
+      color: var(--hint);
+      font-family: 'DM Mono', monospace;
+    }
+
+    footer a {
+      font-size: 13px;
+      font-family: 'DM Mono', monospace;
+    }
+
+    @media (max-width: 480px) {
+      section { padding: 20px; }
+      main { padding: 32px 16px 64px; }
+      header { padding: 24px 16px 20px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <div class="logo-mark">kg</div>
+      <span class="logo-name">Kilo</span>
+    </div>
+    <div class="page-title">Privacy Policy</div>
+  </header>
+
+  <main>
+    <span class="updated">Last updated: March 2025</span>
+
+    <section>
+      <h2>Overview</h2>
+      <p>Kilo is a personal workout tracking app. Your privacy is important to us. This policy explains what data the app uses, how it is stored, and when it leaves your device.</p>
+      <div class="highlight">
+        All workout data is stored locally on your device. Kilo does not have servers, does not create user accounts, and does not sell or share your data with third parties.
+      </div>
+    </section>
+
+    <section>
+      <h2>Data stored on your device</h2>
+      <p>The following data is stored locally in a SQLite database on your device and never transmitted unless you explicitly use the AI Coach feature:</p>
+      <ul>
+        <li>Workout sessions — name, date, notes, effort rating</li>
+        <li>Exercises — name, muscle group, sets, reps, weight</li>
+        <li>Workout templates</li>
+        <li>Injury logs</li>
+        <li>App preferences — theme, units, notification settings</li>
+      </ul>
+      <p>This data never leaves your device except as described in the AI Coach section below.</p>
+    </section>
+
+    <section>
+      <h2>AI Coach — Google Gemini API</h2>
+      <p>Kilo includes an optional AI Coach feature powered by Google Gemini. When you tap <strong style="color: var(--text);">"Analyse with AI"</strong>, a summary of your recent workout data is sent to Google's Gemini API to generate personalised coaching insights.</p>
+      <p>The data sent includes:</p>
+      <ul>
+        <li>Recent session names, dates, and volume</li>
+        <li>Weekly muscle group volume totals</li>
+        <li>Progression suggestions generated on-device</li>
+      </ul>
+      <p>This data is processed by Google in accordance with their privacy policy. It is not linked to your identity and contains no personal identifiers.</p>
+      <p>The AI Coach feature is rate-limited to once per 24 hours. You can choose never to use it — all other app features work entirely offline.</p>
+      <p>Google's privacy policy: <a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a></p>
+    </section>
+
+    <section>
+      <h2>Permissions</h2>
+      <ul>
+        <li><strong style="color: var(--text);">Notifications</strong> — used for optional workout reminders. You can disable this at any time in Settings.</li>
+        <li><strong style="color: var(--text);">Receive boot completed</strong> — used to reschedule workout reminders after device restart. No data is collected.</li>
+        <li><strong style="color: var(--text);">Internet</strong> — used only when the AI Coach feature is actively triggered by you.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Data retention & deletion</h2>
+      <p>All data is stored on your device. To delete all app data, uninstall Kilo from your device. This permanently removes all workout history, templates, and preferences.</p>
+      <p>We have no ability to delete data on your behalf as we do not have access to it.</p>
+    </section>
+
+    <section>
+      <h2>Children</h2>
+      <p>Kilo is not directed at children under the age of 13. We do not knowingly collect any information from children.</p>
+    </section>
+
+    <section>
+      <h2>Changes to this policy</h2>
+      <p>If this policy changes, the updated version will be published at this URL with a revised date. Continued use of the app after changes constitutes acceptance of the updated policy.</p>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p>Questions about this privacy policy? Reach us at:</p>
+      <p><a href="mailto:support.kiloapp@gmail.com">support.kiloapp@gmail.com</a></p>
+    </section>
+
+  </main>
+
+  <footer>
+    <span>© 2025 Kilo Workout Tracker</span>
+    <a href="mailto:support.kiloapp@gmail.com">support.kiloapp@gmail.com</a>
+  </footer>
+
+</body>
+</html>
