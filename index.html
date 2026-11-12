@@ -133,8 +133,8 @@
     ul li:last-child { border-bottom: none; }
 
     ul li::before {
-      content: '—';
-      position: absolute;
+      content: '–';
+position: absolute;
       left: 0;
       color: var(--hint);
       font-family: 'DM Mono', monospace;
@@ -199,56 +199,59 @@
   </header>
 
   <main>
-    <span class="updated">Last updated: March 2025</span>
+    <span class="updated">Last updated: 12 November 2026</span>
 
     <section>
       <h2>Overview</h2>
-      <p>Kilo is a personal workout tracking app. Your privacy is important to us. This policy explains what data the app uses, how it is stored, and when it leaves your device.</p>
+      <p>Kilo is a personal workout tracking app. This policy explains what data the app keeps, where it is stored, and the few moments when data can leave your phone, each of them started by you.</p>
       <div class="highlight">
-        All workout data is stored locally on your device. Kilo does not have servers, does not create user accounts, and does not sell or share your data with third parties.
+        Everything Kilo records stays on your phone. The app has no servers, no user accounts, no analytics and no internet permission. We never see your data and cannot sell or share it.
       </div>
     </section>
 
     <section>
       <h2>Data stored on your device</h2>
-      <p>The following data is stored locally in a SQLite database on your device and never transmitted unless you explicitly use the AI Coach feature:</p>
+      <p>Kilo keeps the following in a local database and in app settings on your phone:</p>
       <ul>
-        <li>Workout sessions — name, date, notes, effort rating</li>
-        <li>Exercises — name, muscle group, sets, reps, weight</li>
-        <li>Workout templates</li>
-        <li>Injury logs</li>
-        <li>App preferences — theme, units, notification settings</li>
+        <li>Workout sessions – name, date, duration, notes, effort rating</li>
+        <li>Exercises and sets – name, muscle group, weight, reps, warm-up flag, notes</li>
+        <li>Workout templates, routines and workout types</li>
+        <li>Your own exercises added to the library</li>
+        <li>Injury notes and which exercises to avoid</li>
+        <li>AI review replies you paste back, and the coaching notes derived from them</li>
+        <li>Progression settings and personal records computed from your sessions</li>
+        <li>App preferences – theme, units, rest timer, reminders</li>
       </ul>
-      <p>This data never leaves your device except as described in the AI Coach section below.</p>
+      <p>None of this is transmitted by the app. It leaves your phone only through the actions described below.</p>
     </section>
 
     <section>
-      <h2>AI Coach — Google Gemini API</h2>
-      <p>Kilo includes an optional AI Coach feature powered by Google Gemini. When you tap <strong style="color: var(--text);">"Analyse with AI"</strong>, a summary of your recent workout data is sent to Google's Gemini API to generate personalised coaching insights.</p>
-      <p>The data sent includes:</p>
+      <h2>When data leaves your phone (only when you choose)</h2>
       <ul>
-        <li>Recent session names, dates, and volume</li>
-        <li>Weekly muscle group volume totals</li>
-        <li>Progression suggestions generated on-device</li>
+        <li><strong>AI review.</strong> When you ask for a review, Kilo writes a text summary of the workouts being reviewed (exercises, sets, your notes, and optionally your active injuries and the previous review's advice) and hands it to an app you pick in the share sheet, such as an AI chat app. Kilo does not send anything itself. What that app does with the text is governed by its own privacy policy. You can also copy the text to the clipboard. The reply you paste back is stored on your phone.</li>
+        <li><strong>Export data.</strong> Creates a CSV file of your sessions and opens the share sheet so you can save or send it where you want.</li>
+        <li><strong>Send feedback.</strong> Opens your email app with a message to support.kiloapp@gmail.com. The message is prefilled with the app version and your Android version so we can help; everything else is what you type.</li>
+        <li><strong>Phone backup.</strong> If Google backup is turned on for your phone, Android includes Kilo's database and settings in that backup, like any other app. It is encrypted and managed by Google under your Google account settings. A workout in progress is not backed up.</li>
       </ul>
-      <p>This data is processed by Google in accordance with their privacy policy. It is not linked to your identity and contains no personal identifiers.</p>
-      <p>The AI Coach feature is rate-limited to once per 24 hours. You can choose never to use it — all other app features work entirely offline.</p>
-      <p>Google's privacy policy: <a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a></p>
     </section>
 
     <section>
       <h2>Permissions</h2>
       <ul>
-        <li><strong style="color: var(--text);">Notifications</strong> — used for optional workout reminders. You can disable this at any time in Settings.</li>
-        <li><strong style="color: var(--text);">Receive boot completed</strong> — used to reschedule workout reminders after device restart. No data is collected.</li>
-        <li><strong style="color: var(--text);">Internet</strong> — used only when the AI Coach feature is actively triggered by you.</li>
+        <li><strong>Notifications</strong> – rest timer alerts and optional workout reminders. You can turn both off in Settings or in your phone's settings.</li>
+        <li><strong>Alarms and reminders</strong> – lets the rest timer end exactly on time. If you do not allow it, the timer still works but may be a little late when the screen is off.</li>
+        <li><strong>Foreground service</strong> – keeps the rest countdown running and visible on the lock screen while a rest is in progress. It stops as soon as the rest ends.</li>
+        <li><strong>Run at startup</strong> – reschedules workout reminders after a restart. No data is read or sent.</li>
+        <li><strong>Vibration and wake lock</strong> – for the end-of-rest alert and an accurate countdown.</li>
       </ul>
+      <p>Kilo does not request internet access, location, contacts, camera, microphone or any health sensor.</p>
     </section>
 
     <section>
-      <h2>Data retention & deletion</h2>
-      <p>All data is stored on your device. To delete all app data, uninstall Kilo from your device. This permanently removes all workout history, templates, and preferences.</p>
-      <p>We have no ability to delete data on your behalf as we do not have access to it.</p>
+      <h2>Data retention and deletion</h2>
+      <p>Your data stays until you delete it. Sessions you delete go to Recently deleted for 7 days, where you can restore them, and are then removed permanently.</p>
+      <p>Settings → Delete all data erases every session, template, routine, exercise and injury from the phone. Uninstalling Kilo removes everything the app stored. A copy may remain in your phone's Google backup until that backup is replaced or you turn backup off in your Google account settings.</p>
+      <p>Because we never receive your data, we cannot delete it on your behalf.</p>
     </section>
 
     <section>
@@ -263,14 +266,13 @@
 
     <section>
       <h2>Contact</h2>
-      <p>Questions about this privacy policy? Reach us at:</p>
-      <p><a href="mailto:support.kiloapp@gmail.com">support.kiloapp@gmail.com</a></p>
+      <p>Questions about this privacy policy? Reach us at:<br/>
+      <a href="mailto:support.kiloapp@gmail.com">support.kiloapp@gmail.com</a></p>
     </section>
-
   </main>
 
   <footer>
-    <span>© 2025 Kilo Workout Tracker</span>
+    <span>© 2026 Kilo Workout Tracker</span>
     <a href="mailto:support.kiloapp@gmail.com">support.kiloapp@gmail.com</a>
   </footer>
 
